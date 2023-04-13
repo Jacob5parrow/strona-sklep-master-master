@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <title>Admin</title>
+    <script type="text/javascript" src="main.js"></script>
+
+</head>
+
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <b href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</b>
+        <a href="index.php">Stona główna</a>
+    </div>
+
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+    <div class="container">
+
+        <header>
+
+            <h1>Admin</h1>
+
+        </header>
+
+        <main>
+            
+            <form method="post" name="login" action="script.php">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Zaloguj się">
+            </form>
+
+        </main>
+
+        <footer>
+            Data ostatniej modyfikacji strony:
+            <script>
+                document.write(document.lastModified);
+            </script>
+        </footer>
+    </div>
+</body>
+
+</html>
